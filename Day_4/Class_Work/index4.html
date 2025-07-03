@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container>h1+p{
+            background-color: aqua;
+        }
+
+        #parent>h1~p{
+            background-color: aqua;
+        }
+
+        #container>div>div>p{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <!--Adjacent Sibling-->
+    <div id="container">
+        <h1>Heading</h1>
+        <p>Paragraph</p>
+        <p>Paragraph</p>
+        <div>
+            <h1>Heading</h1>
+            <p>Paragraph</p>
+            <div>
+                <p>Paragraph</p>
+            </div>
+        </div>
+    </div>
+
+    <!--General Sibling-->
+    <div id="parent">
+        <h1>Heading</h1>
+        <p>Paragraph</p>
+        <p>paragraph</p>
+        <div>
+            <h1>Heading</h1>
+            <p>Paragraph</p>
+            <div>
+                <p>Paragraph</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

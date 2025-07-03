@@ -1,0 +1,79 @@
+body {
+    background: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.keyboard {
+    width: 850px;
+}
+
+.row{
+    display: flex;
+}
+
+.keys1{
+    border: 1px solid black;
+    display: flex;
+    height: 25px;
+    width: 50px;
+    border-radius: 10%;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.keys2{
+    border: 1px solid black;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.updown{
+    border: 1px solid black;
+    display: flex;
+    height: 25px;
+    width: 50px;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.backspace{
+    width: 100px;
+}
+
+.tab{
+    width: 70px;
+}
+
+.capslock{
+    width: 80px;
+}
+
+
+.enter{
+    width: 100px;
+}
+
+.shift{
+    width: 120px;
+}
+
+.space{
+    width: 300px;
+}
+
+.alt{
+    width: 80px;
+}
