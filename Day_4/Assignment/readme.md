@@ -1,2 +1,3 @@
 Day4 Assignment 
-![Screenshot 2025-07-03 193505](https://github.com/user-attachments/assets/80dd71c9-001e-4264-85fa-7f846f33919e)
+
+![Screenshot (12)](https://github.com/user-attachments/assets/e7a5fa9b-5464-427d-865e-ee7a15dbfa62)
