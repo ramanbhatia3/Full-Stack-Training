@@ -1,0 +1,94 @@
+:root{
+    --primary-color: olive;
+    --secondary-color: pink;
+    --button-color: forestgreen;
+    --font-color: brown;
+
+}
+
+
+#parent{
+    width: 85%;
+    height: 600px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    margin: auto;
+    
+}
+
+.box{
+    border: 1px solid red;
+    border-radius: 5%;
+    margin: 5px;
+    
+}
+
+#parent > div:nth-child(1){
+    background-color: var(--primary-color);
+}
+
+#parent > div:nth-child(2){
+    background-color: var(--primary-color);
+    grid-area: 1/2/2/4;
+}
+
+#parent > div:nth-child(3){
+    background-color: var(--primary-color);
+}
+
+#parent > div:nth-child(4){
+    background-color: var(--secondary-color);
+}
+
+#parent > div:nth-child(5){
+    background-color: var(--secondary-color);
+}
+
+#parent > div:nth-child(6){
+    background-color: var(--secondary-color);
+    grid-area: 2/3/4/5;
+}
+
+#parent > div:nth-child(7){
+    background-color: burlywood;
+    grid-area: 3/1/6/2;
+}
+
+#parent > div:nth-child(8){
+    background-color: gray;
+}
+
+#parent > div:nth-child(9){
+    background-color: blue;
+    grid-area: 4/2/7/3;
+}
+
+#parent > div:nth-child(10){
+    background-color: black;
+}
+
+#parent > div:nth-child(11){
+    background-color: yellow;
+    grid-area: 4/4/7/5;
+}
+
+#parent > div:nth-child(12){
+    background-color: hotpink;
+}
+
+#parent > div:nth-child(13){
+    background-color: darkred;
+}
+
+#parent > div:nth-child(14){
+    background-color: indigo;
+}
+
+@media (max-width: 1000px){
+    #parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    }
+}
