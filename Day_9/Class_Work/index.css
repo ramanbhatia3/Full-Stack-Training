@@ -1,0 +1,9 @@
+#parent{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    border: 1px solid red;
+    padding: 10px;
+
+}
