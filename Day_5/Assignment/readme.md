@@ -1,2 +1,3 @@
 Day5 Assignment
-![Screenshot (14)](https://github.com/user-attachments/assets/5fec79ce-061a-4f99-8280-ff60754325e6)
+
+<img width="959" height="482" alt="keyboard" src="https://github.com/user-attachments/assets/cf9c0af7-baee-4537-9c1e-be312fbf232d" />
