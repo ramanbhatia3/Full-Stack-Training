@@ -11,9 +11,8 @@
     }
 
     .first{
-        width: 950px;
+        width: 810px;
     }
-
     .row{
         display: flex;
     }
@@ -21,8 +20,8 @@
     .keys1{
         border: 1px solid black;
         display: flex;
-        height: 25px;
-        width: 50px;
+        height:25px;
+        width: 49px;
         border-radius: 10%;
         margin: 2px;
         justify-content: center;
@@ -50,10 +49,21 @@
         align-items: center;
     }
 
+    .num{
+        text-align: center;
+    }
+
+    .small{
+        width: 40px;
+    }
+
+    .wide{
+        width: 65px;
+    }
 
 
     .backspace{
-        width: 100px;
+        width: 95px;
     }
 
     .tab{
@@ -61,11 +71,15 @@
     }
 
     .zero{
-        width: 100px;
+        width: 105px;
+    }
+
+    .alt{
+        width: 55px;
     }
 
     .capslock{
-        width: 80px;
+        width: 90px;
     }
 
     .long{
@@ -77,7 +91,7 @@
     }
 
     .shift{
-        width: 120px;
+        width: 122px;
     }
 
     .space{
