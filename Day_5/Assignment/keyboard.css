@@ -1,71 +1,83 @@
 body {
     background: silver;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow-x: hidden;
+    display: grid;
+    place-items: center;
 }
 
+
+.keyboard {
+    display: grid;
+}
 
 
 .row {
     display: grid;
     grid-auto-flow: column;
+    grid-auto-columns: max-content;
 }
 
-.keys1 {
-    border: 1px solid black;
+
+.keys1{
     display: grid;
     place-items: center;
     height: 25px;
-    width: 50px;
+    width: 49px;
+    border: 1px solid black;
     border-radius: 10%;
     margin: 2px;
 }
 
-.keys2 {
-    border: 1px solid black;
+.keys2{
     display: grid;
     place-items: center;
     height: 50px;
     width: 50px;
+    border: 1px solid black;
     border-radius: 10%;
     margin: 2px;
 }
 
-.updown {
-    border: 1px solid black;
-    display: grid;
-    place-items: center;
+.updown{
+    border: 1px solid black;;
     height: 25px;
     width: 50px;
     border-radius: 10%;
+    text-align: center;
 }
 
-.backspace {
+.small{
+    width: 40px;
+}
+
+.backspace{
     width: 100px;
 }
 
-.tab {
-    width: 70px;
+.tab{
+    width: 75px;
 }
 
-.capslock {
-    width: 80px;
+.wide{
+    width: 65px;
 }
 
-.enter {
+.capslock{
+    width: 95px;
+}
+
+.enter{
     width: 100px;
 }
 
-.shift {
-    width: 120px;
+.shift{
+    width: 125px;
 }
 
-.space {
+.space{
     width: 300px;
 }
 
-.alt {
-    width: 80px;
+.alt{
+    width: 85px;
 }
