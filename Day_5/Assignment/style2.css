@@ -1,0 +1,100 @@
+ body {
+    background: silver;
+    overflow-x: hidden;
+    display: grid;
+    place-items: center;
+}
+
+
+.keyboard {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+.row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+}
+
+
+.keys1{
+    display: grid;
+    place-items: center;
+    height: 25px;
+    width: 49px;
+    border: 1px solid black;
+    border-radius: 10%;
+    margin: 2px;
+}
+
+.keys2{
+    display: grid;
+    place-items: center;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 10%;
+    margin: 2px;
+}
+
+.updown{
+    border: 1px solid black;;
+    height: 25px;
+    width: 50px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.small{
+    width: 40px;
+}
+
+.backspace{
+    width: 100px;
+}
+
+.tab{
+    width: 75px;
+}
+
+.wide{
+    width: 65px;
+}
+
+.capslock{
+    width: 95px;
+}
+
+.enter{
+    width: 100px;
+}
+
+.num{
+    text-align: center;
+}
+.shift{
+    width: 125px;
+}
+
+.space{
+    width: 250px;
+}
+
+.alt{
+    width: 82px;
+}
+
+.zero{
+    width: 105px;
+}
+
+.long{
+    height: 105px;
+    margin-top: 4px;
+}
+
+.btn{
+    margin-top: 4px;
+}
