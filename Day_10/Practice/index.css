@@ -1,0 +1,12 @@
+nav{
+    height: 150px;
+    width: 100%;
+    background-color: antiquewhite;
+    border: 1px solid aqua;
+}
+
+nav>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
