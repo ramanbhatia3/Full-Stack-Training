@@ -7,7 +7,7 @@ const userSignup =async(req,res)=>{
     
 
     try {
-        const user = new userModel(name, email, password, phoneNumber, age);
+        const user = new userModel({name, email, password, phoneNumber, age});
 
         await user.save();
         res.status(200).send("Userdata successfully stored in DB");
