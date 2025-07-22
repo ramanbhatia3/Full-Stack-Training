@@ -1,13 +1,14 @@
 const express = require("express")
 const { connection } = require("./configs/db");
-const { userRoute } = require("./routes/user.route"); 
+const { userRoute } = require("./routes/user.route");  
+require('dotenv').config()
 
 const app = express();
 app.use(express.json());
 
 app.use(userRoute);
 
-const PORT = 8080;
+const PORT = process.env.PORT;
 
 
 app.get("/",(req,res)=>{

@@ -2,6 +2,7 @@ const express = require("express")
 const { connection } = require("./configs/db");
 const { userRoute } = require("./routes/user.route"); 
 const { productRoute } = require("./routes/products.route");
+require('dotenv').config() 
 
 const app = express();
 app.use(express.json());
@@ -13,7 +14,7 @@ app.get("/",(req,res)=>{
 app.use(userRoute);
 app.use(productRoute);
 
-const PORT = 8080;
+const PORT = process.env.PORT;
 
 app.listen(PORT, async() => {
     try{

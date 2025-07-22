@@ -1,0 +1,58 @@
+
+
+#parent{
+    width: 40%;
+    height: 500px;
+    border: 1px solid green;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+h1{
+    border: 1px solid black;
+    margin-left: 30%;
+    width:39%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+input{
+    padding: 10px;
+    width: 95%;
+    margin-top: 10px;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px;
+    font-weight: bold;
+}
+
+#btn{
+    margin-top: 40px;
+    width: 50%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: beige;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+#btn:hover{
+    background-color: cornflowerblue;
+    font-size: 16px;
+    font-weight: 500;
+    color: brown;
+    
+}
+
+input:focus{
+    background-color: aqua;
+}

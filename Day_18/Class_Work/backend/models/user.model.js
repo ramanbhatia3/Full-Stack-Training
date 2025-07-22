@@ -1,7 +1,6 @@
-//if connection is using mongoose then schema will also use mongoose
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 
-const userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
     name:{
         type:String
     },
@@ -17,10 +16,9 @@ const userSchema = mongoose.Schema({
     age:{
         type:Number
     }
-});
+},{timestamps:true})
 
-
-const userModel = mongoose.model("user",userSchema)
+const userModel = mongoose.model("user",userSchema);
 
 module.exports = {
     userModel

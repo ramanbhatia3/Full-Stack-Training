@@ -18,7 +18,7 @@ const auth = async(req,res,next) =>{
         const userId = decoded.userId;
         const matchedUser = await userModel.findOne({_id:userId});
         if(matchedUser){
-            //req.header==??????
+            req.headers = decoded.userId;
             next();
         }else{
             return res.status(400).send({msg:"user not authorized"})
