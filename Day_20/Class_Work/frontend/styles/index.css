@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+nav {
+  height: 70px;
+  background-color: #008080;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#navLink {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+#navLink li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#navLink li:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+main {
+  padding: 40px 80px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in;
+  margin-bottom: 60px;
+}
+
+.texts h1 {
+  font-size: 48px;
+  color: #333;
+  line-height: 1.2;
+  animation: fadeInText 1s ease-in;
+}
+
+.image img {
+  width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.05);
+}
+
+/* Products Section */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.products .product-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Why Us Section */
+.why-us .why-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.why-item {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.why-item h3 {
+  color: #008080;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+  background-color: #008080;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 12px;
+  margin-top: 60px;
+}
+
+.cta h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.cta button {
+  background-color: white;
+  color: #008080;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #7cb342;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  color: white;
+  font-size: 16px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #navLink {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .carousel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image img {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .texts h1 {
+    font-size: 32px;
+  }
+
+  .why-us .why-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-grid {
+    justify-content: center;
+  }
+}

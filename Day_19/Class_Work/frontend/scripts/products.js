@@ -18,7 +18,7 @@ form.addEventListener("submit",async (event)=>{
 
     const token = localStorage.getItem("token");
 
-    const response = await fetch("http://localhost:8080/api/product/create-product", {
+    const response = await fetch("https://full-stack-training-n6dh.onrender.com/api/product/create-product", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -36,7 +36,7 @@ form.addEventListener("submit",async (event)=>{
 const getData = async () => {
     const token = localStorage.getItem("token");
 
-    const response = await fetch("http://localhost:8080/api/product/get-product", {
+    const response = await fetch("https://full-stack-training-n6dh.onrender.com/api/product/get-product", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo" onclick="home()">MyShop</div>
+        <ul id="navLink">
+            <li onclick="products()">Products</li>
+            <li onclick="login()">Login</li>
+            <li onclick="signup()">Signup</li>
+            <li onclick="window.location.href='cart.html'">Cart</li>
+        </ul>
+    </nav>
+    <div id="parent">
+        <h1>Products</h1>
+        <form action="" id="form">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="brand" placeholder="Brand">
+            <input type="text" id="image" placeholder="Image">
+            <input type="text" id="category" placeholder="Category">
+            <input type="number" id="price" placeholder="Price">
+            <input type="text" id="desc" placeholder="Description">
+            <input type="number" id="rating" placeholder="Rating">
+            <button id="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="addProduct">
+        <button id="addButton">Add Product</button>
+    </div>
+    <div id="sorting">
+        <input type="search" id="search" placeholder="Search products...">
+
+        <select id="sort">
+            <option value="select">Select</option>
+            <option value="priceLowHigh">Price: Low to High</option>
+            <option value="priceHighLow">Price: High to Low</option>
+            <option value="ratingHighLow">Rating: High to Low</option>
+            <option value="ratingLowHigh">Rating: Low to High</option>
+
+        </select>
+
+        <select id="filter">
+            <option value="all">All Categories</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Wearable">Wearable</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Accessories">Accessories</option>
+        </select>
+    </div>
+
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <div id="products">
+
+</body>
+
+<script src="./scripts/products.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</html>

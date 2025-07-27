@@ -9,7 +9,7 @@ form.addEventListener("submit", async (event) => {
     const data = {email, password };
 
 
-    const response = await fetch("http://localhost:8080/api/user/login", {
+    const response = await fetch("https://full-stack-training-n6dh.onrender.com/api/user/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

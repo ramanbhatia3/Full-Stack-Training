@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./styles/login.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+       <nav>
+        <div class="logo" onclick="home()">MyShop</div>
+        <ul id="navLink">
+            <li onclick="products()">Products</li>
+            <li onclick="login()">Login</li>
+            <li onclick="signup()">Signup</li>
+            <li onclick="window.location.href='cart.html'">Cart</li>
+        </ul>
+    </nav>
+    <div id="parent">
+        <form action="" id="form">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button id="btn" type="submit">Submit</button>
+        </form>
+    </div>    
+</body>
+<script src="./scripts/login.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</html>
